@@ -27,7 +27,7 @@ class MenuButton<T> extends StatefulWidget {
       final this.labelDecoration,
       final this.itemBackgroundColor = Colors.white,
       final this.menuButtonBackgroundColor = Colors.white,
-            final this.menuBorderRaduis = 0,
+            required final this.menuBorderRaduis,
       })
       : assert(showSelectedItemOnList || selectedItem != null);
 
@@ -88,7 +88,7 @@ class MenuButton<T> extends StatefulWidget {
   /// Background color of menu button [default = Colors.white]
   final Color menuButtonBackgroundColor;
 
-  final double menuBorderRaduis;
+  final double? menuBorderRaduis;
   @override
   State<StatefulWidget> createState() => _MenuButtonState<T>();
 }
