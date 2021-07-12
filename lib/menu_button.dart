@@ -88,7 +88,7 @@ class MenuButton<T> extends StatefulWidget {
   /// Background color of menu button [default = Colors.white]
   final Color menuButtonBackgroundColor;
 
-  final int menuBorderRaduis;
+  final double menuBorderRaduis;
   @override
   State<StatefulWidget> createState() => _MenuButtonState<T>();
 }
