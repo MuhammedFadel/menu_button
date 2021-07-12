@@ -136,7 +136,7 @@ class _MenuButtonState<T> extends State<MenuButton<T>> {
         decoration: decoration,
         child: Material(
           color: widget.menuButtonBackgroundColor,
-          borderRadius: BorderRadius.circular(widget.),
+          borderRadius: BorderRadius.circular(widget.menuBorderRaduis),
           child: InkWell(
             borderRadius: decoration.borderRadius != null ? decoration.borderRadius as BorderRadius : null,
             child: Container(
